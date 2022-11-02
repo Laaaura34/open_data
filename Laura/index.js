@@ -22,11 +22,11 @@ app.get('/', function(request, response){
         //On itère la boucle sur le nombre total d'observation dans le but de récupérer dans un format json les données.
     for (let i = tab; i < 5000; i++) {
         var json1 = {}; // Création d'une variable au format json
-		json1['codeInsee'] = covoit['F' + i]; // On créer un tableau json vide en récupérant comme identifiant de chaque tableau : le code insee. Création d'un identifiant unique.
-		json1['Communes'] = covoit['E' + i]; // On rempli le tableau json de la ligne i avec l'observation du bureau de vote,
+		json1['codeInsee'] = covoit['F' + i]["v"]; // On créer un tableau json vide en récupérant comme identifiant de chaque tableau : le code insee. Création d'un identifiant unique.
+		json1['Communes'] = covoit['E' + i]["v"]; // On rempli le tableau json de la ligne i avec l'observation du bureau de vote,
 		json1['Type'] = covoit['G' + i]; // avec le nom des départements,
-		json1['Longitude'] = covoit['K' + i]; // avec le nb d'inscrit,
-		json1['Latitude'] = covoit['L' + i]; // avec le nb de votants,
+		//json1['Longitude'] = covoit['K' + i]; // avec le nb d'inscrit,
+		//json1['Latitude'] = covoit['L' + i]; // avec le nb de votants,
 
         if (json1['codeInsee'] == codeInsee) tableau = [...tableau, json1]
         else {
