@@ -1,0 +1,72 @@
+<html>
+   <head>
+      <title>Leaflet Poly lines</title>
+      <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+      <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+   </head>
+   
+   <body>
+      <div id = "map" style = "width:900px; height:580px"  ></div>
+      <ul id="authors"></ul>
+
+      <script>
+        function append(parent, el) {
+  return parent.appendChild(el);
+}
+
+const ul = document.getElementById('authors');
+const url = 'http://localhost:3001/join';
+const r = fetch(url)
+console.log(r)
+
+fetch(url)
+.then((resp) => resp.json())
+.then(function(data) {
+  let authors = data.results;
+  console.log(resp);
+  return authors.map(function(author) {
+    let li = createNode('li');
+    let img = createNode('img');
+    let span = createNode('span');
+    img.src = author.picture.medium;
+    span.innerHTML = `${author.name.first} ${author.name.last}`;
+    append(li, img);
+    append(li, span);
+    append(ul, li);
+  })
+})
+.catch(function(error) {
+  console.log(error);
+});
+
+
+
+         // Creating map options
+         var mapOptions = {
+            center: [2.644054988514926,49.43594990712577],
+            zoom: 7
+         }
+         // Creating a map object
+         var map = new L.map('map', mapOptions);
+         
+         // Creating a Layer object
+         var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+         
+         // Adding layer to the map
+         map.addLayer(layer);
+         
+         // Creating latlng object
+         var latlngs = 
+            resp[0]
+         ;
+         // Creating a poly line
+         var polyline = L.polyline(latlngs, {color: 'red'});
+         
+         // Adding to poly line to map
+         polyline.addTo(map);
+
+      </script>
+   </body>
+   
+</html>
