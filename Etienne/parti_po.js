@@ -5,19 +5,7 @@ const axios = require('axios');
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const Papa = require('papaparse');
-
-
-                // Configure
-app.listen(PORT, (error) => {       // Listen
-    if(!error)
-        console.log("Server is Successfully Running"+ PORT)
-    else
-        console.log("Error occurred, server can't start", error);
-    }
-);
-
-
-const csvFilePath = 'data/test.csv'
+const csvFilePath = 'Repertoire-national-des-elus.csv'
 
 const file = fs.createReadStream(csvFilePath);
 
@@ -31,3 +19,14 @@ Papa.parse(file, {
     console.log('Complete', csvData.length, 'records.'); 
   }
 });
+
+
+
+app.listen(PORT, (error) => {       // Listen
+    if(!error)
+        console.log("Server is Successfully Running"+ PORT)
+    else
+        console.log("Error occurred, server can't start", error);
+    }
+);
+
