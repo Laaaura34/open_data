@@ -1,0 +1,93 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_color,route_text_color
+140,1,7,Ploeuc L'Hermitage - St Brieuc,,3,684B91,FFFFFF
+11,1,30,Centre-Clemenceau - Villes Hervé,,3,D8836B,FFFFFF
+16,1,40,Trémeloir - Gare Centre,,3,8C5723,FFFFFF
+14,1,60,Gare Routière Robien - La Méaugon,,3,9F3787,FFFFFF
+13,1,70,Plédran Centre - Centre-Clemenceau,,3,8D1E47,FFFFFF
+15,1,90,Gare Routière Robien - St-Donan,,3,3E6750,FFFFFF
+34,1,130,Gare Centre - Ploufragan Mairie,,3,F7E93A,000000
+109,1,S104,Lantic - Plourhan - St Quay Portrieux,,3,0F70B7,FFFFFF
+111,1,S106,Binic - Plourhan - Tréveneuc - St Quay Portrieux,,3,0F70B7,FFFFFF
+168,1,S201,Lermot - Collège Ch. De Gaulle,,3,8683BB,FFFFFF
+169,1,S202,Yffiniac Gare - Collège Ch. De Gaulle,,3,8683BB,FFFFFF
+171,1,S203,La Croix Bertrand - Collège Ch. De Gaulle,,3,8683BB,FFFFFF
+37,1,S402,Pont Gato - Collège St Pierre,,3,0F70B7,FFFFFF
+38,1,S403,Ville Madren - Collège St Pierre,,3,0F70B7,FFFFFF
+41,1,S404,Ville Auriol - Collège Léquier,,3,0F70B7,FFFFFF
+42,1,S405,Pont de Gouët - Collège st Pierre,,3,0F70B7,FFFFFF
+92,1,S502,Le Vieux-Bourg - St Bihy - Lanfains - Quintin,,3,0F70B7,FFFFFF
+93,1,S503,St Donan - Cohiniac - Le Foeil - Quintin,,3,0F70B7,FFFFFF
+89,1,S504,Plaintel - St Brandan - Quintin (010802BN),,3,0F70B7,FFFFFF
+95,1,S505,St-Julien - Plaine Haute - Le Foeil - Quintin,,3,0F70B7,FFFFFF
+96,1,S506,Plédran - Plaintel - St Brandan - Quintin,,3,0F70B7,FFFFFF
+97,1,S507,St Carreuc - Plaintel - St Brandan - Le Foeil - Quintin,,3,0F70B7,FFFFFF
+98,1,S508,L'Hermitage Lorge - St Brandan - Lanfains - Quintin,,3,0F70B7,FFFFFF
+99,1,S509,La Harmoye - Lanfains - St Brandan - Quintin,,3,0F70B7,FFFFFF
+100,1,S510,Plédran - St Carreuc - Plaintel - St Brandan - Quintin,,3,0F70B7,FFFFFF
+40,1,S702,Scolaire Plédran ,,3,0F70B7,FFFFFF
+39,1,S703,Scolaire Plédran ,,3,0F70B7,FFFFFF
+113,1,S704,St Carreuc - Ploeuc sur Lié,,3,0F70B7,FFFFFF
+115,1,S707,St Carreuc - Plaintel - Ploeuc,,3,0F70B7,FFFFFF
+116,1,S708,St Carreuc - Plaintel - Ploeuc sur Lié,,3,0F70B7,FFFFFF
+117,1,S709,Plaintel Centre - Ploeuc sur Lié,,3,0F70B7,FFFFFF
+32,1,S901,Boisillon - Collège Métairie,,3,0F70B7,FFFFFF
+20,1,TE10,Pordic - Jean Moulin,,3,A467A3,FFFFFF
+112,1,TE11,Plourhan - Lantic - Pordic - St Brieuc,,3,A467A3,FFFFFF
+21,1,TE4,Centre-Clemenceau - Jean Moulin,,3,334580,FFFFFF
+36,1,TE50,Gare Routière Robien - Campus des Métiers,,3,D7AE5B,FFFFFF
+101,1,TE51,Le Foeil Mairie - Lycée Rabelais,,3,D7AE5B,FFFFFF
+114,1,TE53,St Carreuc - Plaintel - Ploeuc sur Lié,,3,D7AE5B,FFFFFF
+131,1,TE54,Plaintel,,3,D7AE5B,FFFFFF
+29,1,TE60,La Méaugon - Gare Routière Robien,,3,9F3787,FFFFFF
+25,1,TE70,Racine - Plédran,,3,8D1E47,FFFFFF
+12,1,20,Centre-Clemenceau - Hillion Centre,,3,8784BC,FFFFFF
+9,1,50,Gare Routière Robien - St-Julien,,3,D7AE5B,FFFFFF
+2,1,A,Cesson République - Les Villages Espace Commercial,,3,334580,FFFFFF
+5,1,B,Lorraine - Langueux Poste,,3,ACC537,FFFFFF
+55,1,C,Trégueux Le Brun - Plérin ZA de l'Arrivée,,3,52929F,FFFFFF
+6,1,E,Cesson République - Les Villages Espace Commercial,,3,DD9525,FFFFFF
+110,1,S105,Plourhan - St Quay Portrieux,,3,0F70B7,FFFFFF
+175,1,TE23,Hillion - Centre Clemenceau ,,3,8683BB,FFFFFF
+46,1,TE3,Gare Routière Robien - Moulin de Colvé,,3,0F70B7,FFFFFF
+86,1,TE52,La Vallée Quintin  - Lycée Rabelais,,3,D7AE5B,FFFFFF
+64,1,N2,Langueux Poste - Ploufragan Lorraine,,3,ACC537,FFFFFF
+78,1,N3,Plérin Eglise  - Trégueux  Bleu Pluriel,,3,52929F,FFFFFF
+17,1,120,Gare Routière Robien - Trégueux Boisillon,,3,7CB04C,FFFFFF
+82,1,TE22,Gare Yffiniac - Gare Routière Robien,,3,8683BB,FFFFFF
+73,1,M1,Cesson République - Les Villages,,3,334580,FFFFFF
+76,1,M2,Ploufragan - Langueux,,3,ACC537,FFFFFF
+75,1,M3,Trégueux - Plérin,,3,52929F,FFFFFF
+80,1,NCV,Navette Centre Ville,,3,AC3376,FFFFFF
+4,1,100,Centre-C des Trente - Pasteur ,,3,626165,FFFFFF
+8,1,D,Ville Oger - Collège Léquier,,3,4570B4,FFFFFF
+24,1,TE7,Croix Tual - Sacré Coeur,,3,ACC537,FFFFFF
+27,1,S401,Collège Lequier - Les Rosaires,,3,0F70B7,FFFFFF
+60,1,10,Trégueux - Pordic,,3,A467A3,FFFFFF
+19,1,TE2,Les Quartiers - Gare Routière Robien,,3,F7E93A,000000
+58,1,AT B,Ateliers Briochins,,3,000000,FFFFFF
+18,1,TE1,Gare Routière Robien - Lycée Renan,,3,626165,FFFFFF
+22,1,TE20,Hillion Centre - Sacré Coeur,,3,8683BB,FFFFFF
+23,1,TE6,Champs de Pies - Sacré Coeur,,3,52929F,FFFFFF
+28,1,80,Gare Routière Robien - La Croix Bertrand,,3,BC1A2E,FFFFFF
+30,1,TE30,Villes Hervé - Gare Routière Robien,,3,D8836B,FFFFFF
+63,1,N1,Les Villages - Cesson  République,,3,334580,FFFFFF
+106,1,TE55,Plaintel,,3,D7AE5B,FFFFFF
+182,1,S108,Primaire Etables,,3,0F70B8,FFFFFF
+108,1,S101,Lantic,,3,0F70B7,FFFFFF
+102,1,S511,Primaire Plaintel,,3,0F70B7,FFFFFF
+103,1,S512,Primaire Plaintel,,3,0F70B7,FFFFFF
+104,1,S513,Primaire Plaintel,,3,0F70B7,FFFFFF
+107,1,S701,St Carreuc,,3,0F70B7,FFFFFF
+183,1,S601,Freyssinet - Jean Macé - Le Haut-Champ - Trémuson,,3,A03788,FFFFFF
+91,1,S501,St Gildas - Le Vieux Bourg,,3,0F70B7,FFFFFF
+105,1,S514,Primaire St Brandan,,3,0F70B7,FFFFFF
+49,1,S102,Primaire Pordic,,3,0F70B7,FFFFFF
+53,1,S103,Primaire Pordic,,3,0F70B7,FFFFFF
+47,1,S705,Primaire Plédran,,3,0F70B7,FFFFFF
+48,1,S706,Primaire Plédran,,3,0F70B7,FFFFFF
+130,1,S107,Primaire Binic,,3,0F70B7,FFFFFF
+81,1,5,Ligne Breizhgo 5,,3,FFB157,000000
+26,1,R,Les Rosaires - Gare Centre,,3,A1297C,FFFFFF
+68,1,DF1,Cesson République - Les Villages,,3,334580,FFFFFF
+69,1,DF2,Ploufragan - Trégueux,,3,ACC537,FFFFFF
+50,1,DF3,Gare Centre - Sacré Coeur,,3,E30613,FFFFFF

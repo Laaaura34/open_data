@@ -1,0 +1,10 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order
+1,2,1,FORUM - FERNAND LEGER,,3,,e0001b,ffffff,1
+2A,2,2A,FORUM - SOLOGNE - FORUM,,3,,008ad9,ffffff,2
+2B,2,2B,FORUM - SOLOGNE - FORUM,,3,,008ad9,ffffff,3
+3,2,3,FORUM - ROUTE DE FOECY,,3,,3fa033,ffffff,4
+4,2,4,FORUM - LES CRELES,,3,,f07f0a,ffffff,5
+5,2,5,FORUM - PETITES CRELES - LES CRELES,,3,,7f1e27,ffffff,6
+6A,2,6A,DESROCHES - HURVOY,,3,,de007b,ffffff,7
+6B,2,6B,BRISSON - DESROCHES,,3,,de007b,ffffff,8
+C4,2,C4-5,FORUM - LES CRELES,,3,,7e5d0c,ffffff,9

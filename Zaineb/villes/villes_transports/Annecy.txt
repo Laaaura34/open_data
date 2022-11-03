@@ -1,0 +1,47 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_color,route_text_color,continuous_pickup
+1,SIBRA,1,Ligne 1 - Poisy College Lycee / Parc des Glaisins,,3,00A13A,FFFFFF,1
+10,SIBRA,10,Ligne 10 - Epagny Metz-Tessy / Gare Annecy,,3,7C6EB0,FFFFFF,1
+11,SIBRA,11,Ligne 11 - Meythet Rabelais / La Salle Pringy,,3,DB3168,FFFFFF,1
+12,SIBRA,12,Ligne 12 - Meythet Rabelais / Poisy Moiry Macully Lovagny,,3,ED6C71,000000,1
+13,SIBRA,13,Ligne 13 - Balmont Quintal / Lycee Baudelaire,,3,C4A501,000000,1
+14,SIBRA,14,Ligne 14 - Piscine Patinoire / Visitation,,3,F192AA,000000,1
+15,SIBRA,15,Ligne 15 - Seynod Bois Gentil / Clinique Generale,,3,AECC53,000000,1
+16,SIBRA,16,Ligne 16 - Chavanod Stade Montagny / Chavanod,,3,F3997B,000000,1
+17,SIBRA,17,Ligne 17 - Piscine Patinoire / Bulloz,,3,009FC6,FFFFFF,1
+18,SIBRA,18,Ligne 18 - Hopital / Pringy Grande Ferme Ferrieres,,3,6071B5,FFFFFF,1
+2,SIBRA,2,Ligne 2 - Seynod Vieugy Periaz / Pringy,,3,E30513,FFFFFF,1
+3,SIBRA,3,Ligne 3 - Altais / Novel,,3,2581C4,FFFFFF,1
+31,SIBRA,31,Ligne 31 - Rumilly / Annecy,,3,D07A3A,000000,1
+4,SIBRA,4,Ligne 4 - Seynod Neigeos / Campus,,3,EE7203,000000,1
+40,SIBRA,40,Ligne 40 - Entrelac / Annecy,,3,2A9BB5,FFFFFF,1
+41,SIBRA,41,Ligne 41 - Le Chatelard / Annecy,,3,853DBC,FFFFFF,1
+42,SIBRA,42,Ligne 42 - Cusy / Annecy,,3,45AB34,FFFFFF,1
+5,SIBRA,5,Ligne 5 - Piscine Patinoire / Glaisins,,3,B44805,FFFFFF,1
+50,SIBRA,50,Ligne 50 A - Annecy / Duingt,,3,ED2828,FFFFFF,1
+50C,SIBRA,50C,Ligne 50C - St Jorioz College / Duingt Croix Here,,3,3A62DB,FFFFFF,1
+6,SIBRA,6,Ligne 6 - La Salle Pringy / Bonlieu,,3,78156A,FFFFFF,1
+60,SIBRA,60,Ligne 60 - Annecy / Talloires-Montmin Angon,,3,0F8AE2,FFFFFF,1
+7,SIBRA,7,Ligne 7 - Grand Epagny / Vignieres,,3,EA5297,000000,1
+8,SIBRA,8,Ligne 8 - Piscine Patinoire / Chavanod Stade,,3,B6014C,FFFFFF,1
+80,SIBRA,80,Ligne 80 - Fillieres / Annecy,,3,1D2FB6,FFFFFF,1
+81,SIBRA,81,Ligne 81 - Aviernoz / Annecy,,3,215B0E,FFFFFF,1
+82,SIBRA,82,Ligne 82 - Filliere / Annecy,,3,E76CC2,000000,1
+9,SIBRA,9,Ligne 9 - Gare Annecy / Clinique Argonay,,3,ACAA00,000000,1
+E,SIBRA,E,Etudiants,,3,000000,FFFFFF,1
+F1,SIBRA,F1,Ligne F1 - Talloires / Montmin Mairie,,3,EE05F6,FFFFFF,1
+F2,SIBRA,F2,Ligne F2 - Talloires / Planfait,,3,6E0FC1,FFFFFF,1
+I,SIBRA,I,Ligne i - Poisy College / Campus,,3,A70076,FFFFFF,1
+J,SIBRA,J,Ligne J - Seynod Vieugy / Pringy Grande Ferme,,3,F49F22,000000,1
+K,SIBRA,K,Ligne K - Clinique Argonay / Paradis,,3,97BE0D,000000,1
+L,SIBRA,L,Ligne L - Hopital / Campus,,3,006FB7,FFFFFF,1
+N,SIBRA,N,Ligne N - La Salle Pringy / Campus,,3,1A1A1A,FFFFFF,1
+NS,SIBRA,NS,Ligne NS - Gare Annecy / Sevrier,,3,78156A,FFFFFF,1
+P1,SIBRA,Pr,Pxoxibus 1 - St Sylvestre Chapeiry / Annecy,,3,E70CEF,FFFFFF,2
+P2,SIBRA,P2,Proxibus 2 - Leschaux / St Jorioz College,,3,F60CD7,FFFFFF,2
+S4,SIBRA,S4,Ligne S4 ete - Gare Annecy / Les Alpages,,3,F9C536,000000,1
+S5,SIBRA,S5,Ligne S5 ete - Duingt / Les Alpages,,3,DF920C,000000,1
+S6,SIBRA,S6,Ligne S6 - St Felix / Semnoz,,3,E95D17,FFFFFF,1
+ScoS,SIBRA,ScoS,Scolaires SIBRA,,3,0D0C0D,FFFFFF,1
+V1,SIBRA,V1,Ligne V1 - Sévrier,,3,F60921,FFFFFF,1
+V2,SIBRA,V2,Ligne V2 - St Jorioz,,3,0A15E9,FFFFFF,1
+V3,SIBRA,V3,Ligne V3 - Bluffy,,3,12CC53,000000,1

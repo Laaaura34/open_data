@@ -1,0 +1,9 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,continuous_pickup,continuous_drop_off
+zenbus:Line:518730001:LOC,,1,Ligne 1 Ramierou - Sapiac,,3,,D22031,FFFFFF,0,0,0
+zenbus:Line:590890002:LOC,,2,Ligne 2 Aussonne - Theas Les Floralies,,3,,00A54F,FFFFFF,1,0,0
+zenbus:Line:577540002:LOC,,3,Ligne 3 Ramierou - Bressols Centre,,3,,02B1D2,000000,2,0,0
+zenbus:Line:577530002:LOC,,4,Ligne 4 Hippodrome - Montbeton,,3,,9FB63A,000000,3,0,0
+zenbus:Line:568350001:LOC,,5,Ligne 5 Capou - Clos Maury,,3,,7660AA,FFFFFF,4,0,0
+zenbus:Line:588980002:LOC,,6,Ligne 6 Pont de Chaume - Gare SNCF,,3,,FED304,000000,5,0,0
+zenbus:Line:576100001:LOC,,7,Ligne 7 Birac - Prax Paris,,3,,BB8E32,000000,6,0,0
+zenbus:Line:587120001:LOC,,8,Ligne 8 Fonneuve - Monplaisir,,3,,F36E21,000000,7,0,0

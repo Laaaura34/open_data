@@ -1,0 +1,14 @@
+route_id,agency_id,route_short_name,tts_route_short_name,route_long_name,tts_route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,direction0_name,direction1_name
+1,10189408,1,,Sainte Valérie - Terre Rouge,,,3,,E52931,FFFFFF,,Sainte Valérie,Terre Rouge
+2,10189408,2,,Daniel Roques - Carrefour de l'Europe - De Gaulle - SNCF,,,3,,3973C2,FFFFFF,,Carrefour de l'Europe / Daniel Roques,Gare SNCF
+3,10189408,3,,Daniel Roques - Daudet - Carmes - Roc de l'Agasse - Route de Lalbenque,,,3,,F140A9,FFFFFF,,Daudet / Daniel Roques,Carmes / Roc de l'Agasse / Rte de Labenque
+4,10189408,4,,Combe du paysan - École de Begoux - Graves - Arcambal,,,3,,27963B,FFFFFF,,Combe du paysan,Graves / Arcambal
+LAD03,10189408,LAD 03,,,,,3,,BF9000,FFFFFF,,RN30 (L3),La Rosière / Rte de Lalbenque
+LAD11,10189408,LAD 11,,,,,3,,FFCCFF,000000,,Flaynac / Pissobi,Carrefour de l'Europe (L2 / L3)
+LAD12,10189408,LAD 12,,,,,3,,FF9900,FFFFFF,,La Gravette,Carrefour de l'Europe (L2 / L3)
+LAD13,10189408,LAD 13,,,,,3,,92D050,FFFFFF,,Regourd,ZI Englandières
+LAD14,10189408,LAD 14,,,,,3,,9900CC,FFFFFF,,Combe du Paysan,St Henri
+LAD15,10189408,LAD 15,,,,,3,,FFFF99,000000,,Saint Cirice,Mairie
+LAD16,10189408,LAD 16,,,,,3,,808080,FFFFFF,,Mairie,Flottes / Cazes
+N1,10189408,NA,,Navette A - P+R Chartreux - Gare - P+R Chartreux,,,3,,7F40DE,FFFFFF,,P+R Chartreux - Gare - P+R Chartreux,
+N2,10189408,NB,,Navette B - P+R Ludo Rolles - Hopital,,,3,,F21DB2,FFFFFF,,P+R Ludo Rolles - Hopital - P+R Ludo Rolles,

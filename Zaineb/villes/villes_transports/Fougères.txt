@@ -1,0 +1,7 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order
+41,SURF,1,Gandhi - Javené Martinière,,3,,E30613,FFFFFF,1
+42,SURF,2,Lécousse Pilais - Verrerie/Saint-Lô,,3,,009FE3,FFFFFF,2
+43,SURF,3,Sermandière - Lécousse Bellevue,,3,,076633,FFFFFF,3
+44,SURF,4,Freyssinet/Becquerel - Laignelet Mairie,,3,,F39200,FFFFFF,4
+45,SURF,5,Beaucé Centre/Branly - L'Aquatis,,3,,951B81,FFFFFF,5
+46,SURF,6,CMA (Faculté des Métiers) - Lariboisière/Basse Bayette,,3,,2FAC66,FFFFFF,6
