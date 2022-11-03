@@ -11,34 +11,28 @@
       <ul id="authors"></ul>
 
       <script>
-        function append(parent, el) {
-  return parent.appendChild(el);
-}
+
 
 const ul = document.getElementById('authors');
 const url = 'http://localhost:3001/join';
-const r = fetch(url)
-console.log(r)
 
-fetch(url)
-.then((resp) => resp.json())
-.then(function(data) {
-  let authors = data.results;
-  console.log(resp);
-  return authors.map(function(author) {
-    let li = createNode('li');
-    let img = createNode('img');
-    let span = createNode('span');
-    img.src = author.picture.medium;
-    span.innerHTML = `${author.name.first} ${author.name.last}`;
-    append(li, img);
-    append(li, span);
-    append(ul, li);
-  })
-})
-.catch(function(error) {
-  console.log(error);
-});
+var xmlhttp = new XMLHttpRequest();
+var resp = ""
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200){
+        resp = xmlhttp.responseText;
+        }
+}
+
+var cam = "http://localhost:3001/join"
+
+
+function show(){
+    xmlhttp.open("GET",cam,  true);
+    xmlhttp.send();
+    alert(resp);
+}
+
 
 
 

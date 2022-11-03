@@ -8,26 +8,6 @@ const axios = require('axios');
 const PORT = process.env.PORT || 3001;
 
 
-//---------
-var  http=require( "http" );  
-var server = http.createServer(function(request, response) {  
-    response.writeHead(200, {  
-        'Content-Type': 'text/plain'  
-    });  
-//     response.write("This is Test Message.");  
-//     response.end();  
- });   
-
-// var  url=require( "url" );  
-// var  path=url.parse(request.url).pathname; 
-
-// server.listen(8082);  
-//---------
-
-
-
-
-
 
 function train(){
 
@@ -66,7 +46,9 @@ function train(){
             const arr1 = [...data]
             const arr2= arr1.map(arr1 => arr1.coordinates);
             //const arr2= arr1.from(['coordinates'])
+            JSON.stringify(arr2);
             response.send(arr2);
+
     })
 })
 
