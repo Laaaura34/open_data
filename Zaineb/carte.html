@@ -1,0 +1,66 @@
+<html>
+   <head>
+      <title>Leaflet Poly lines</title>
+      <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+      <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+   </head>
+   
+   <body>
+      <div id = "map" style = "width:900px; height:580px"  ></div>
+      <ul id="authors"></ul>
+
+      <script>
+
+
+const ul = document.getElementById('authors');
+const url = 'http://localhost:3001/join';
+
+var xmlhttp = new XMLHttpRequest();
+var resp = ""
+xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200){
+        resp = xmlhttp.responseText;
+        }
+}
+
+var cam = "http://localhost:3001/join"
+
+
+function show(){
+    xmlhttp.open("GET",cam,  true);
+    xmlhttp.send();
+    alert(resp);
+}
+
+
+
+
+         // Creating map options
+         var mapOptions = {
+            center: [2.644054988514926,49.43594990712577],
+            zoom: 7
+         }
+         // Creating a map object
+         var map = new L.map('map', mapOptions);
+         
+         // Creating a Layer object
+         var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+         
+         // Adding layer to the map
+         map.addLayer(layer);
+         
+         // Creating latlng object
+         var latlngs = 
+            resp[0]
+         ;
+         // Creating a poly line
+         var polyline = L.polyline(latlngs, {color: 'red'});
+         
+         // Adding to poly line to map
+         polyline.addTo(map);
+
+      </script>
+   </body>
+   
+</html>
