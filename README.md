@@ -6,11 +6,11 @@ _Commentaires sur les données de transports en commun:_
 
 ### Exactitude: 
 
-#### Plusieurs horaires ne correspondent pas à ce qu'il est affiché sur le site internet des agences de transports en commun.
+#### Plusieurs horaires ne correspondent pas à ce qu'il est affiché sur les sites internet par les agences de transports en commun.
 
 ### Cohérence:
 
-#### Pour chaque ville, la base de données sous format de texte contient tout transport de tout type existant. La base de données d'une telle ville peut être appelé par exemple "tram+bus". Mais en explorant les données, on a eu du mal à les distinguer ces lignes : manque d'un identifiant unique pour chaque type de transport qui aurait pu faliciter la tâche.
+#### Pour chaque ville, la base de données sous format de texte contient tout transport de tout type existant. La base de données d'une telle ville peut être appelé par exemple "tram+bus". Mais en explorant les données, on a eu du mal à distinguer ces lignes : manque d'un identifiant unique pour chaque type de transport qui aurait pu faliciter la tâche.
 
 ### Trouvabilité:
 
