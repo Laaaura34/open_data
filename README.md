@@ -104,26 +104,43 @@ Il manque des informations puisqu'il y a
 
 _Commentaires sur les données de transports en commun:_
 
-### Exactitude: 
 
-#### Plusieurs horaires ne correspondent pas à ce qu'il est affiché sur les sites internet par les agences de transports en commun.
 
-### Cohérence:
+### API
 
-#### Pour chaque ville, la base de données sous format de texte contient tout transport de tout type existant. La base de données d'une telle ville peut être appelé par exemple "tram+bus". Mais en explorant les données, on a eu du mal à distinguer ces lignes : manque d'un identifiant unique pour chaque type de transport qui aurait pu faliciter la tâche.
+L'API est disponible à l'adresse suivante :
 
-### Trouvabilité:
+L'API va récolter des données parmi les 4 différentes sources de données ci dessus. Notre API passe par le chemin /covoit.
 
-#### Les coordonnées des routes concernées par les transports en commun sont souvent manquantes. (La colonne route_url est vide chez presque toutes les villes).
+Nous allons voir comment manipuler l'API et appliquer différents niveaux de filtres aux requêtes.
 
-### Actualité:
+Le format d'entrée est une page HTML avec un champs de saisie qui attend un nom de ville quand le format de sortie est une page HTML montrant toutes les spécifités de la ville (voir ci dessous) pour nous aider dans notre quête de trouver une ville éco-responsable où s'installer.
 
-#### On remarque qu'il y a souvent des données très récentes qui datent de 2022, sinon de 2021 ou 2020. Certes, il existe aussi des données périmées des villes que l'on ne va pas utiliser. 
+L'API va nous renvoyer pour chaque ville sa consommation électrique annuelle, sa qualité d'eau, ses emplacements d'aires de covoiturages (sur une carte) ainsi que son prix moyen au mètre carré.
 
-### Traçabilité:
+Nous avons un filtre applicable à notre disposition pour la sélection des données qui est le code Insee :
 
-#### Pas de colonne qui mentionne la ville concernée par les données dans les fichiers .txt. Ceci est limitant au niveau des opérations que l'on veut appliquer sur ces données, car on ne peut pas construire une grande base de données à partir de ces fichiers qui correspondent aux villes. Néamoins, le travail qui a été fait par notre groupe c'est de nommer chaque fichier .txt par le nom de la ville avant la manipulation de la data. 
+-   code_insee : applique un filtre sur les communes souhaités, pour obtenir plusieurs communes il faut les séparer par une virgule
 
-### Intégrité: 
+#### Exemple :
 
-#### On a conclu de la manipulation des données citée dans le commentaire précédent que les données non référencées peuvent poser problème : il existe +35000 villes en France. Leur traçabilité peut durer des heures vu la taille de données.
+Je souhaite récolter les données sur la commune de Montpellier (34000):
+
+/covoit?code_insee='34000'
+
+Ce qui va nous renvoyer :
+
+Une page HTML contenant une carte avec Montpellier en son milieu et ses aires de covoiturages indiqués par des points rouges (?) :
+
+- Consommation électrique annuelle : XXXXXX
+- Qualité de l'eau :  XXXXXX
+- Prix moyen au mètre carré : XXXXX
+
+
+
+### To be continued
+
+Pour améliorer notre API nous avons comme objectif de rajouter sur la carte les aires de vélo en libre service, les arrêts de bus et le label « Villes et Villages Fleuris » de la commune (exemple : Lyon s'est fait attribué 4 fleurs en 2021).
+
+Bien évidemment nous pourrions améliorer notre interface utilisateur pour la rendre plus ergonomique ainsi que le temps de traitement de chaque requête.
+
