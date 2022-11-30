@@ -13,17 +13,13 @@ var fetch = require('node-fetch');
 const { resolve } = require("path");
 
 const PORT = process.env.PORT || 300;
-app.use(express.static("public"));
-
-app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({
     extended:true
 }));
 
-
 app.get('/covoit', function(req, res) {
-	res.sendFile(__dirname + "/index.html");
+	res.sendFile(__dirname + "/page.html");
 });
 
 function eau_f(code_commune){
@@ -104,57 +100,44 @@ function covoit_f(code_commune){
 
 
 app.post('/covoit', function(req, response){
-        var nom_commune = removeAccents.remove(req.body.code_commune.toUpperCase());
-        console.log("Nom de la commune saisie :", nom_commune)
+    var nom_commune = removeAccents.remove(req.body.code_commune.toUpperCase());
 
-            const immo = new Promise((resolve, reject) => {
-                let urlimmo = "https://www.data.gouv.fr/fr/datasets/r/9e7cf3ab-ce68-40ab-b906-9ce7396fc9bc";
-                let options = {json: true};
-                let fini = false;
-                req = httprequest(urlimmo, options, (error, response, body) => {
-                    body.forEach(element => {
-                        if (fini){
-                            return;
-                        }
-                        if (element.fields.libelle_commune.split(' ')[0] == nom_commune){
-                            fini = true;
-                            var ob = {};
-                            ob['codeInsee'] = element.fields.code_insee;
-                            ob['prix_appart_ancien'] = element.fields.marche_immobilier_prix_des_appartements_anciens_a;
-                            ob['prix_maison_ancien'] = element.fields.marche_immobilier_prix_des_maisons_anciennes_a;
-                            ob['prix_appart_neuf'] = element.fields.marche_immobilier_prix_du_neuf_a_les_appartements_neufs;
-                            ob['prix_maison_neuf'] = element.fields.marche_immobilier_prix_des_maisons_neuves;
-                            resolve(ob);
-                            console.log(ob.codeInsee);
-                            return;
-                        }
-                    })
-                })
+    console.log("Nom de la commune saisie :", nom_commune)
+
+    const immo = new Promise((resolve, reject) => {
+        let urlimmo = "https://www.data.gouv.fr/fr/datasets/r/9e7cf3ab-ce68-40ab-b906-9ce7396fc9bc";
+        let options = {json: true};
+        let fini = false;
+        req = httprequest(urlimmo, options, (error, response, body) => {
+            body.forEach(element => {
+                if (fini){
+                    return;
+                }
+                if (element.fields.libelle_commune.split(' ')[0] == nom_commune){
+                    fini = true;
+                    var ob = {};
+                    ob['codeInsee'] = element.fields.code_insee;
+                    ob['prix_appart_ancien'] = element.fields.marche_immobilier_prix_des_appartements_anciens_a;
+                    ob['prix_maison_ancien'] = element.fields.marche_immobilier_prix_des_maisons_anciennes_a;
+                    ob['prix_appart_neuf'] = element.fields.marche_immobilier_prix_du_neuf_a_les_appartements_neufs;
+                    ob['prix_maison_neuf'] = element.fields.marche_immobilier_prix_des_maisons_neuves;
+                    resolve(ob);
+                    console.log(ob.codeInsee);
+                    return;
+                }
             })
-            
-            immo.then(ob => {
-                var code_commune = ob.codeInsee;
-                Promise.all([eau_f(code_commune), energie_f(code_commune), covoit_f(code_commune)]).then(function(values){
-                    const prix_maison_neuves = ob.prix_maison_neuf
-                    const prix_appart_ancien = ob.prix_appart_ancien
-                    const prix_maison_ancien = ob.prix_maison_ancien
-                    const prix_appart_neuf = ob.prix_appart_neuf
-                    const obj = values[0][0];
-                    const consototale_energie = values[1].consototale_energie;
-                    const Covoit = values[2].length;
-                    const Immo = ob.codeInsee;
-                    console.log("ob", ob);
-                    console.log("values", values);
-                    response.render("value", {
-                        nom_commune: nom_commune,
-                        objet: obj,
-                        conso:consototale_energie,
-                        covoit:Covoit,immobilier:Immo,
-                        prix_maison_neuves:prix_maison_neuves,
-                        prix_appart_ancien:prix_appart_ancien,
-                        prix_maison_ancien:prix_maison_ancien,
-                        prix_appart_neuf:prix_appart_neuf
-                    });
+        })
+    })
+
+    immo.then(ob => {
+        console.log("Fonction Immo finie ...")
+        var code_commune = ob.codeInsee;
+        Promise.all([eau_f(code_commune), energie_f(code_commune), covoit_f(code_commune)]).then(function(values){
+            var obj = values[0];
+            obj["consototale_energie"] = values[1].consototale_energie;
+            obj["Covoit"] = values[2];
+            obj["Immo"] = ob;
+            response.send(obj);
         })
     })
 })
