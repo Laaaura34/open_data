@@ -13,7 +13,7 @@ IL aura accès à plusieurs informations de la ville telles que :
 ## Critique des bases de données choisies:
 
 
-#### Aires de covoiturages 
+### Aires de covoiturages 
 
 Ces données proviennent de Point d'Accès National transport.data.gouv.fr. 
 
@@ -44,7 +44,7 @@ Ancienneté : Les informations stockées sont-elles récentes ou anciennes ? Le 
 Dans la colonne " mise à jour" on voit que certaine données ont été mises à jour en 2017. Certe la dernière modification du fichier date d'Octobre 20022 cependant certaine lignes n'ont pas été mises à jour depuis 5 ans.
 
 
-#### Consommation annuelle d’électricité par commune
+### Consommation annuelle d’électricité par commune
 
 Lien : https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-secteur-dactivite-agregee-commune/information/
 
@@ -65,7 +65,7 @@ Nous avons mesuré la qualité des données par différents critères :
 -	Ancienneté : Nous disposons des données sur la consommation électrique par commune depuis 2011. Les données sont mises à jour chaque fois. Ces données sont publiées dans le respect des règles relatives à la protection des Informations Commercialement Sensibles.
 
 
-#### Qualité de l'eau
+### Qualité de l'eau
 
 Lien : https://hubeau.eaufrance.fr/page/api-qualite-eau-potable
 
@@ -92,7 +92,7 @@ Nous avons mesuré la qualité des données par différents critères :
 -	Ancienneté : Les informations stockées sont récentes. Le jeu de données est mis à jour mensuellement.
 
 
-#### Étude sur le logement
+### Étude sur le logement
 
 Ces données trouvées sur le site data.gouv ont été produites par le Groupe BPCE, qui est le deuxième acteur bancaire en France. 
 https://www.data.gouv.fr/fr/datasets/etude-sur-le-logement/
@@ -106,7 +106,7 @@ _Commentaires sur les données de transports en commun:_
 
 
 
-### API
+## API
 
 L'API est disponible à l'adresse suivante :
 
@@ -122,7 +122,7 @@ Nous avons un filtre applicable à notre disposition pour la sélection des donn
 
 -   code_insee : applique un filtre sur les communes souhaités, pour obtenir plusieurs communes il faut les séparer par une virgule
 
-#### Exemple :
+### Exemple :
 
 Je souhaite récolter les données sur la commune de Montpellier (34000):
 
@@ -138,7 +138,7 @@ Une page HTML contenant une carte avec Montpellier en son milieu et ses aires de
 
 
 
-### To be continued
+## To be continued
 
 Pour améliorer notre API nous avons comme objectif de rajouter sur la carte les aires de vélo en libre service, les arrêts de bus et le label « Villes et Villages Fleuris » de la commune (exemple : Lyon s'est fait attribué 4 fleurs en 2021).
 
