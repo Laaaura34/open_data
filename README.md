@@ -1,5 +1,52 @@
 # Projet d'intégration de données connectées:
 
+Ce projet à pour but de permettre à un utilisateur qui souhaite s'installer dans une nouvelle ville de chercher une ville "écologique".
+
+IL aura accès a plusieurs informations telles que : 
+
+- La consommation énergétiques les villes
+- La qualité de l'eau des villes 
+- Les aires de covoiturages 
+- Le prix au mètre carré 
+
+
+## Critique des bases de données choisies:
+
+
+#### Aires de covoiturages 
+
+Ces données proviennent de Point d'Accès National transport.data.gouv.fr. 
+
+Les données ne semblent pas 100% exactes. 
+Les données sont actualisées elles nen sont donc pas statiques. 
+
+
+Complétude : Est-ce que les informations sont complètes ? Les champs à renseigner le sont-ils ? D’autres champs utiles pourraient-ils être ajoutés ?
+
+Certaines données sont manquantes comme le nombre de places ou l'adresse : parfois un chiffre est renseigné mais souvent il est manquant. 
+On retrouve parfois des données aberrantes: 5361 comme donnée de longitude par exemple.
+
+Fiabilité :	Les différentes données sont-elles justes ? Certaines informations sont très complètes… mais totalement fausses ! Un haut pourcentage d’erreurs peut être très impactant pour une entreprise.
+
+Pas tout à fait. Par exemple on retrouve parfois des données aberrantes: 5361 comme donnée de longitude.
+
+
+Cohérence :	Est-ce que certaines données sont contradictoires ? Si une même donnée contenue dans plusieurs bases présente des résultats différents, elle ne peut pas être considérée comme fiable et une investigation doit être menée.
+
+Non. Cela semble cohérent. 
+
+Pertinence : Est-ce que les informations stockées sont d’une quelconque utilité pour l’entreprise ? La collecte de données non pertinentes est une perte de temps et d’argent.
+
+Oui, nous avons les adresse des aires de covoiturages, leur type ( parking ou aire d'autoroute par exemple), leur coordonnées GPS pour les situer sur une carte et encores d'autres données pertinentes. 
+
+Accessibilité :	Aussi intéressantes soient-elles, les données concernées peuvent-elles être consultées facilement par les collaborateurs habilités ? Une information difficile d’accès est une information peu ou pas exploitée.
+
+Elles sont en libre service donc l'accessibilité est confirmée. 
+
+Ancienneté : Les informations stockées sont-elles récentes ou anciennes ? Le temps érode inéluctablement la valeur d’une information, des mises à jour régulières sont donc indispensables.
+
+Dans la colonne " mise à jour" on voit que certaine données ont été mises à jour en 2017. Certe la dernière modification du fichier date d'Octobre 20022 cependant certaine lignes n'ont pas été mises à jour depuis 5 ans.
+
 ## Critique des bases de données choisies:
 
 _Commentaires sur les données de transports en commun:_
