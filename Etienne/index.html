@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------------LINKS------------->
+
+    <script
+      src="https://kit.fontawesome.com/53a8500608.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container glass">
+      <div class="search">
+        <form method="post" action="/covoit">
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Location"
+            name="code_commune"
+          />
+          <button type="submit" class="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <div class="weather loading">
+        <h2 class="nomdelacommune">Nom de la commune</h2>
+        
+        <h1 class="code_commune">51 °C</h1>
+        <div class="flex">
+          <div class="immobilier">Cloudy</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
