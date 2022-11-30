@@ -1,13 +1,13 @@
 # Projet d'intégration de données connectées:
 
-Ce projet à pour but de permettre à un utilisateur qui souhaite s'installer dans une nouvelle ville de chercher une ville "écologique".
+Ce projet a pour but de permettre à un utilisateur qui souhaite s'installer dans une nouvelle ville de trouver une ville "écologique".
 
-IL aura accès a plusieurs informations telles que : 
+IL aura accès à plusieurs informations de la ville telles que : 
 
-- La consommation énergétiques les villes
-- La qualité de l'eau des villes 
-- Les aires de covoiturages 
-- Le prix au mètre carré 
+- Sa consommation électrique annuelle
+- Sa qualité de l'eau
+- Ses aires de covoiturages
+- Son prix moyen au mètre carré
 
 
 ## Critique des bases de données choisies:
@@ -42,6 +42,55 @@ Elles sont en libre service donc l'accessibilité est confirmée.
 Ancienneté : Les informations stockées sont-elles récentes ou anciennes ? Le temps érode inéluctablement la valeur d’une information, des mises à jour régulières sont donc indispensables.
 
 Dans la colonne " mise à jour" on voit que certaine données ont été mises à jour en 2017. Certe la dernière modification du fichier date d'Octobre 20022 cependant certaine lignes n'ont pas été mises à jour depuis 5 ans.
+
+
+#### Consommation annuelle d’électricité par commune
+
+Lien : https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-secteur-dactivite-agregee-commune/information/
+
+Ce jeu de donnée nous permet de visualiser l’évolution de 2011 à 2021 des consommations d'électricité et de gaz par secteur d'activité (résidentiel, tertiaire, industriel, agricole ou non affecté) et par commune. 
+
+Nous avons mesuré la qualité des données par différents critères :
+
+-   Complétude : Les informations de notre jeu de données sont complètes, il nous manque 0 champs. Nous avons sélectionné les colonnes qui nous intéressent pour construire notre API.
+
+-	Fiabilité : Les données ont été ventilé sur le référentiel INSEE (Institut national de la statistique et des études économiques) au 1er janvier 2021. Le pourcentage d’erreur est donc très infime.
+
+-	Cohérence : Les données sont cohérentes, nous avons vérifié les données pour certaines lignes en croisant les résultats avec d’autres sources.
+
+-	Pertinence : Nous utilisons ici la consommation globale d’électricité par commune.
+
+-	Accessibilité : Les données concernées peuvent être consultées facilement, en effet elles sont en ligne sur un site open source et libre de droit https://opendata.agenceore.fr/ qui regroupent toutes les données autour de l’énergie en France.
+
+-	Ancienneté : Nous disposons des données sur la consommation électrique par commune depuis 2011. Les données sont mises à jour chaque fois. Ces données sont publiées dans le respect des règles relatives à la protection des Informations Commercialement Sensibles.
+
+
+#### Qualité de l'eau
+
+Lien : https://hubeau.eaufrance.fr/page/api-qualite-eau-potable
+
+Les données diffusées concernent les résultats du contrôle sanitaire de l'eau distribuée commune par commune :
+
+-	Prélèvements et résultats des analyses réalisées dans le cadre du contrôle sanitaire réglementaire sur les unités de distribution ou les installations directement en amont
+
+-	Liens entre communes et unités de distribution
+
+Les éléments mis à disposition dans ce jeu de données correspondent à une compilation des bulletins d’analyses diffusés en ligne, commune par commune, sur le site internet du Ministère des Solidarités et de la Santé : http://eaupotable.sante.gouv.fr/.
+
+Nous avons mesuré la qualité des données par différents critères :
+
+-	Complétude : Les informations du jeu de données ci-dessus sont complètes. Nous avons sélectionné seulement certaines colonnes pour construire notre jeu de donnée.
+
+-	Fiabilité : L'API "Qualité de l'eau potable" diffuse les données mises en ligne par le Ministère des Solidarités et de la Santé sur le portail data.gouv.fr.
+
+-	Cohérence : Les données nous semblent cohérentes, en effet nous les avons vérifiés en croisant les résultats avec d’autres sources de données.
+
+-	Pertinence : Nous sélectionnons seulement les informations pertinentes pour notre API, c’est-à-dire les consommations d’eau par habitant par commune ainsi que les codes INSEE de chaque commune.
+
+-	Accessibilité : Les données peuvent être consultées facilement, en effet elles sont en ligne sur un site qui respectent les principes de l’open data (accessible, réutilisable, sans restriction par n’importe quel utilisateur, libre de droit…).
+
+-	Ancienneté : Les informations stockées sont récentes. Le jeu de données est mis à jour mensuellement.
+
 
 #### Étude sur le logement
 

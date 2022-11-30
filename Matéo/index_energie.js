@@ -42,6 +42,8 @@ app.get('/energie', function(request, response){
 
 })
 
+
+
 /*
 app.get('/join', function(req, response){
 	var tableau = vote_f();
