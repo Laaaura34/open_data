@@ -17,10 +17,6 @@ IL aura accès a plusieurs informations telles que :
 
 Ces données proviennent de Point d'Accès National transport.data.gouv.fr. 
 
-Les données ne semblent pas 100% exactes. 
-Les données sont actualisées elles nen sont donc pas statiques. 
-
-
 Complétude : Est-ce que les informations sont complètes ? Les champs à renseigner le sont-ils ? D’autres champs utiles pourraient-ils être ajoutés ?
 
 Certaines données sont manquantes comme le nombre de places ou l'adresse : parfois un chiffre est renseigné mais souvent il est manquant. 
@@ -47,7 +43,15 @@ Ancienneté : Les informations stockées sont-elles récentes ou anciennes ? Le 
 
 Dans la colonne " mise à jour" on voit que certaine données ont été mises à jour en 2017. Certe la dernière modification du fichier date d'Octobre 20022 cependant certaine lignes n'ont pas été mises à jour depuis 5 ans.
 
-## Critique des bases de données choisies:
+#### Étude sur le logement
+
+Ces données trouvées sur le site data.gouv ont été produites par le Groupe BPCE, qui est le deuxième acteur bancaire en France. 
+https://www.data.gouv.fr/fr/datasets/etude-sur-le-logement/
+
+Complétude : Est-ce que les informations sont complètes ? Les champs à renseigner le sont-ils ? D’autres champs utiles pourraient-ils être ajoutés ?
+
+Il manque des informations puisqu'il y a 
+
 
 _Commentaires sur les données de transports en commun:_
 
