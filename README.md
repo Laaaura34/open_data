@@ -10,7 +10,7 @@ _Commentaires sur les données de transports en commun:_
 
 ### Cohérence:
 
-#### Pour chaque ville, la base de données sous format de texte contient tout transport de tout type existant. La base de données d'une telle ville peut être appelé par exemple "tram+bus". Mais en explorant les données, on a eu du mal à distinguer ces lignes : manque d'un identifiant unique pour chaque type de transport qui aurait pu faliciter la tâche.
+#### Pour chaque ville, la base de données sous format de texte contient tout transport de tout type existant. La base de données d'une telle ville peut être appelé par exemple "tram+bus". Mais en explorant les données, on a eu du mal à distinguer ces lignes : manque d'un identifiant unique pour chaque type de transport qui aurait pu faciliter la tâche.
 
 ### Trouvabilité:
 
