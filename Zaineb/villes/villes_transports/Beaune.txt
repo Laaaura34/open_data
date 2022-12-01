@@ -1,8 +1,0 @@
-﻿route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
-"1_1","COTEETBUS","1","Ligne 1","","3","","C1002B","FFFFFF"
-"2_2","COTEETBUS","2","Ligne 2","","3","","00ACD6","FFFFFF"
-"21_1","COTEETBUS","21","Ligne 2.1","","3","","00ACD6","FFFFFF"
-"22_1","COTEETBUS","22","Ligne 2.2","","3","","00ACD6","FFFFFF"
-"3_1","COTEETBUS","3","Ligne 3","","3","","83B81A","FFFFFF"
-"4_1","COTEETBUS","4","Ligne 4","","3","","A02383","FFFFFF"
-"5_2","COTEETBUS","5","Ligne 5","","3","","ED7925","FFFFFF"
