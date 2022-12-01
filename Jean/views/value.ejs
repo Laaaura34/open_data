@@ -17,12 +17,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
-    <title>Les bringueurs</title>
+    <title>Ville Economique</title>
 </head>
 <body>
+    <button onclick="window.location.href = '/commentaire';"> Commentaire </button>
     <div class="container glass">
         <div class="search">
-            <form method="post" action="/covoit">
+            <form method="post" action="/ville-eco">
                 <input type="text" class="search-bar" placeholder="Nom ville" name="code_commune">
                 <button type="submit" class="btn "><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
@@ -51,8 +52,6 @@
               <div class="covoit"><strong>Nombre d'aires de covoiturage :</strong><%=covoit%></div>
             </div>
         </div>
-    </div>
-
-    
+    </div> 
 </body>
 </html>
