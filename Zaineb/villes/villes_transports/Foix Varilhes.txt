@@ -1,6 +1,0 @@
-agency_id,route_color,route_id,route_long_name,route_short_name,route_text_color,route_type
-CAPPC,008080,415,ZAC Permilhac <->Parvis,1,FFFFFF,3
-CAPPC,99CC00,416,Parvis<->LEP Durroux,2,FFFFFF,3
-CAPPC,800000,417,Parvis<->Centre Universitaire,3,FFFFFF,3
-CAPPC,dfdd14,419,Parvis<->Caussou ou Montgailhard,5,000000,3
-CAPPC,FE9A00,418,Cimetière rte du L'Herm - APAJH- Le Cussol,4,ffffff,3
