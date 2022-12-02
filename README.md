@@ -8,6 +8,7 @@ IL aura accès à plusieurs informations de la ville telles que :
 - Sa qualité de l'eau
 - Ses aires de covoiturages
 - Son prix moyen au mètre carré
+- Score internet de l'API openDataMiashs
 
 
 ## Critique des bases de données choisies:
@@ -108,9 +109,17 @@ _Commentaires sur les données de transports en commun:_
 
 ## API
 
-L'API est disponible à l'adresse suivante :
+L'API est disponible à l'adresse suivante : https://ecocity.osc-fr1.scalingo.io
 
-L'API va récolter des données parmi les 4 différentes sources de données ci dessus. Notre API passe par le chemin /covoit.
+L'API va récolter des données parmi les 4 différentes sources de données ci dessus. 
+
+Les chemins : 
+
+-https://villeeco.osc-fr1.scalingo.io/ville-eco
+-https://villeeco.osc-fr1.scalingo.io/commentaire
+-https://villeeco.osc-fr1.scalingo.io/ville-eco/:nom_commune
+-https://villeeco.osc-fr1.scalingo.io/api-docs
+
 
 Nous allons voir comment manipuler l'API et appliquer différents niveaux de filtres aux requêtes.
 
@@ -120,21 +129,28 @@ L'API va nous renvoyer pour chaque ville sa consommation électrique annuelle, s
 
 Nous avons un filtre applicable à notre disposition pour la sélection des données qui est le code Insee :
 
--   code_insee : applique un filtre sur les communes souhaités, pour obtenir plusieurs communes il faut les séparer par une virgule
 
 ### Exemple :
 
-Je souhaite récolter les données sur la commune de Montpellier (34000):
+Je souhaite récolter les données écologiques sur la commune de Montpellier (34000):
 
-/covoit?code_insee='34000'
+je vais à l'adresse :
+-https://villeeco.osc-fr1.scalingo.io/ville-eco
+
+puis je tape Montpellier dans la barre de recherche. 
 
 Ce qui va nous renvoyer :
 
-Une page HTML contenant une carte avec Montpellier en son milieu et ses aires de covoiturages indiqués par des points rouges (?) :
 
-- Consommation électrique annuelle : XXXXXX
-- Qualité de l'eau :  XXXXXX
-- Prix moyen au mètre carré : XXXXX
+- Informations sur les maisons neuves: XXXXXX
+- Informations sur les appartements anciens :  XXXXXX
+- Informations sur les maisons anciennes: XXXXX
+- Informations sur les appartements neufs : XXXXX
+- Consommation totale d'énergie : XXX
+- Nombre aires covoiturage : XXXX
+- Score internet de l'API openDataMiashs (Autre groupe)
+
+
 
 
 
@@ -144,3 +160,9 @@ Pour améliorer notre API nous avons comme objectif de rajouter sur la carte les
 
 Bien évidemment nous pourrions améliorer notre interface utilisateur pour la rendre plus ergonomique ainsi que le temps de traitement de chaque requête.
 
+GitHub: 
+
+projet : https://github.com/Laaaura34/open_data
+
+Changement de GIT pour déploiement et maj dont autres groupes 
+déploiement : https://github.com/ecocitymiashs/cityeco
