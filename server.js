@@ -7,27 +7,16 @@ const bodyParser = require("body-parser");
 const http = require('http');
 const httprequest = require('request');
 const removeAccents = require('remove-accents-diacritics');
-const path = require("path");
-const https = require("https");
 //const axios = require('axios');
-
 
 const swaggerUi = require('swagger-ui-express'),
 swaggerDocument = require('./swagger.json');
 
 var fetch = require('node-fetch');
 const { resolve } = require("path");
-const { response } = require("express");
 
 const PORT = process.env.PORT || 300;
 app.use(express.static("public"));
-
-const port = 3000;
-
-app.listen( process.env.PORT || port, function () {
-    console.log("server running on port " + port);
-  });
-  
 
 app.set("view engine", "ejs");
 
@@ -191,38 +180,6 @@ function covoit_f(code_commune){
         });
 }
 
-function internet_f(nom_commune){
-    let urlinternet = "https://opendatamiashs.osc-fr1.scalingo.io/get/"+removeAccents.remove(nom_commune.toUpperCase());
-    return fetch(urlinternet)
-        .then(res => res.json())
-        .then(function(json){
-            console.log('Success:', json);
-            var data = json[0];
-            console.log('data:', data);
-            if (typeof data == 'undefined'){
-                return "Il n'y a pas de données";
-            } else {
-                return data.scoreInternet;
-            }
-        });
-}
-
-
-app.get("/get/:ville", function (req, res) {
-
-    const ville = removeAccents.remove(req.params.ville.toUpperCase())
-    console.log("Nom de la commune saisie :", ville)
-    let url = "https://opendatamiashs.osc-fr1.scalingo.io/get/"+ville;
-    console.log(url) 
-    fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      res.send(data)
-    })
- })
-
-
-
 
 app.post('/ville-eco', function(req, response){
         var nom_commune = removeAccents.remove(req.body.code_commune.toUpperCase());
@@ -255,7 +212,7 @@ app.post('/ville-eco', function(req, response){
             
             immo.then(ob => {
                 var code_commune = ob.codeInsee;
-                Promise.all([eau_f(code_commune), energie_f(code_commune), covoit_f(code_commune), internet_f(nom_commune)]).then(function(values){
+                Promise.all([eau_f(code_commune), energie_f(code_commune), covoit_f(code_commune)]).then(function(values){
                     const prix_maison_neuves = ob.prix_maison_neuf
                     const prix_appart_ancien = ob.prix_appart_ancien
                     const prix_maison_ancien = ob.prix_maison_ancien
@@ -264,7 +221,6 @@ app.post('/ville-eco', function(req, response){
                     const consototale_energie = values[1].consototale_energie;
                     const Covoit = values[2].length;
                     const Immo = ob.codeInsee;
-                    const scoreInternet = values[3];
                     console.log("ob", ob);
                     console.log("values", values);
                     response.render("value", {
@@ -274,16 +230,20 @@ app.post('/ville-eco', function(req, response){
                         prix_maison_neuves:prix_maison_neuves,
                         prix_appart_ancien:prix_appart_ancien,
                         prix_maison_ancien:prix_maison_ancien,
-                        prix_appart_neuf:prix_appart_neuf,
-                        scoreInternet: scoreInternet
+                        prix_appart_neuf:prix_appart_neuf
                     });
         })
     })
 })
-  
+
+
 app.use(
     '/api-docs',
     swaggerUi.serve, 
     swaggerUi.setup(swaggerDocument)
   );
 
+
+app.listen(PORT, function(){
+	console.log('Bienvenu sur le port :', PORT);
+})
